@@ -22,6 +22,7 @@ public class DAOServiceImpl implements DAOservice {
 			ResultSet result = stmnt
 					.executeQuery("select * from login where email='" + email + "' and password='" + password + "'");
 			return result.next();
+			System.out.println("hello");
 
 		} catch (Exception e) {
 		}
